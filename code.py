@@ -12,8 +12,6 @@ class YouTubeDownloader:
 
     def download(self, resolution):
         yt = YouTube(self.url)
-        print('Please Turn on your proxy (if you are in iran)')
-        request_type = input('What is your favorite video resolution ? (high/low)')
         if resolution == 'high':
             try:
                 yt.streams.get_highest_resolution().download(self.path)
