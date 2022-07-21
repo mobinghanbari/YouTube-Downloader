@@ -9,3 +9,23 @@ class YouTubeDownloader:
         yt = YouTube(self.url)
         result = f'video title : {yt.title}\nvideo author : {yt.author}'
         return result
+
+    def download(self, resolution):
+        yt = YouTube(self.url)
+        print('Please Turn on your proxy (if you are in iran)')
+        request_type = input('What is your favorite video resolution ? (high/low)')
+        if resolution == 'high':
+            try:
+                yt.streams.get_highest_resolution().download(self.path)
+
+            except Exception:
+                print('Please Check Your Internet Or Proxy(if you are in iran)')
+
+        elif resolution == 'low':
+            try:
+                yt.streams.get_lowest_resolution().download(self.path)
+
+            except Exception:
+                print('Please Check Your Internet Or Proxy(if you are in iran)')
+        
+        print('Please Write Your Resolution Correctly')
