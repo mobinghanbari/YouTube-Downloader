@@ -15,6 +15,7 @@ class YouTubeDownloader:
         if resolution == 'high':
             try:
                 yt.streams.get_highest_resolution().download(self.path)
+                print('Downloading ...')
 
             except Exception:
                 print('Please Check Your Internet Or Proxy(if you are in iran)')
@@ -22,8 +23,10 @@ class YouTubeDownloader:
         elif resolution == 'low':
             try:
                 yt.streams.get_lowest_resolution().download(self.path)
-
+                print('Downloading ...')
+                
             except Exception:
                 print('Please Check Your Internet Or Proxy(if you are in iran)')
         
-        print('Please Write Your Resolution Correctly')
+        else:
+            print('Please Write Your Resolution Correctly')
