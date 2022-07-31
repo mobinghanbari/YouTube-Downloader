@@ -1,5 +1,5 @@
 # Youtube Downloader With Python
-this is a youtube downloader app that is created by python and pytube library
+this is a youtube downloader app that is created by python language and pytube library
 
 ## How To Use
 ### 1 . Clone the project
