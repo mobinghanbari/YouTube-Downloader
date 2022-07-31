@@ -2,15 +2,25 @@
 this is a youtube downloader app that is created by python and pytube library
 
 ## How To Use
-1. first clone the project:
+### 1 . Clone the project
 ```
 git clone git@github.com:mobinghanbari/YouTube-Downloader.git
 ```
-2. go to the project folder:
+### 2 . Go To The Project Folder
 ```
 cd youtube-downloader
 ```
-3. just enter the below command:
+### 3 . Build a virtual environment with virtualenv
+```
+virtualenv venv
+
+venv\Scripts\activate.bat
+```
+### 4 . Install The Dependencies
+```
+pip install -r requirements.txt
+```
+### 5 . Just Enter The Below Command:
 ```
 python run.py
 ```
